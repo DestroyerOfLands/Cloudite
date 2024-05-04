@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cloudite:cloudite"
+    }
+  },
+  "result": {
+    "item" : "cloudite:cloudite_block"
+  }
+}
