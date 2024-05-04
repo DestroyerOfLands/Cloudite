@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.RAW_CLOUDITE.get());
                 output.accept(ModBlocks.CLOUDITE_BLOCK.get());
                 output.accept(ModBlocks.EMPYREAN_DEBRIS.get());
+                output.accept(ModItems.CLOUDITE_SCRAP.get());
+
             })
             .build());
 

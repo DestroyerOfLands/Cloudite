@@ -18,6 +18,8 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CLOUDITE = ITEMS.register("raw_cloudite",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> CLOUDITE_SCRAP = ITEMS.register("cloudite_scrap",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventbus){
         ITEMS.register(eventbus);

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredients": [{
-    "item": "cloudite:raw_cloudite"
-  }],
-  "result" : "cloudite:cloudite",
-  "experience": 2,
-  "cookingtime": 100
-}
