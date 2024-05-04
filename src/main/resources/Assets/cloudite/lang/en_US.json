@@ -4,6 +4,7 @@
   "creativetab.cloudite_items": "Cloudite",
   "block.cloudite.cloudite_block": "Block Of Cloudite",
   "block.cloudite.raw_cloudite_block": "Empyrean Debris",
-  "item.cloudite.cloudite_scrap": "Empyrean Scrap"
-
+  "item.cloudite.cloudite_scrap": "Empyrean Scrap",
+  "item.cloudite.ore_finder": "Ore Finder",
+  "item.cloudite.ore_finder_valuable": "Valuable Ore Finder"
 }
