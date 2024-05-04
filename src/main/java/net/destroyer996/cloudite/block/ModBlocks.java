@@ -22,9 +22,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FirstMod.MOD_ID);
 
     public static final RegistryObject<Block> CLOUDITE_BLOCK = registerBlock("cloudite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).mapColor(MapColor.COLOR_LIGHT_GRAY)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.NETHERITE_BLOCK).explosionResistance(1200f)));
     public static final RegistryObject<Block> EMPYREAN_DEBRIS = registerBlock("raw_cloudite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.COLOR_YELLOW)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.ANCIENT_DEBRIS).explosionResistance(1200f)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

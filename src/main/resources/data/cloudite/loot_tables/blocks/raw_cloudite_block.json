@@ -1,0 +1,15 @@
+{
+  "type": "minecraft;block",
+  "pools": [{
+    "bonus_rolls": 5.0,
+    "conditions": [{
+      "condition": "minecraft:survives_explosion"
+    }],
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "cloudite:raw_cloudite"
+    }],
+    "rolls": 1.0
+  }],
+  "random_sequence": "cloudite:blocks/raw_cloudite_block"
+}
