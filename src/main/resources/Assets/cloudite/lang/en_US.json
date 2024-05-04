@@ -1,5 +1,7 @@
 {
   "item.cloudite.cloudite": "Cloudite",
   "item.cloudite.raw_cloudite": "Raw Cloudite",
-  "creativetab.cloudite_items": "Cloudite"
+  "creativetab.cloudite_items": "Cloudite",
+  "block.cloudite.cloudite_block": "Block Of Cloudite",
+  "block.cloudite.raw_cloudite_block": "Empyrean Debris"
 }

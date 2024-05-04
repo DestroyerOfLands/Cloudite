@@ -1,6 +1,7 @@
-package net.destroyer996.mod.item;
+package net.destroyer996.cloudite.item;
 
-import net.destroyer996.mod.FirstMod;
+import net.destroyer996.cloudite.FirstMod;
+import net.destroyer996.cloudite.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,8 @@ public class ModCreativeModeTabs {
                 //all items added to this tab are added from here
                 output.accept(ModItems.CLOUDITE.get());
                 output.accept(ModItems.RAW_CLOUDITE.get());
+                output.accept(ModBlocks.CLOUDITE_BLOCK.get());
+                output.accept(ModBlocks.EMPYREAN_DEBRIS.get());
             })
             .build());
 

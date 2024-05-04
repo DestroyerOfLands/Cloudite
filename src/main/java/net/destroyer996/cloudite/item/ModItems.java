@@ -1,6 +1,6 @@
-package net.destroyer996.mod.item;
+package net.destroyer996.cloudite.item;
 
-import net.destroyer996.mod.FirstMod;
+import net.destroyer996.cloudite.FirstMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

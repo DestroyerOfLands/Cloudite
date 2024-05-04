@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cloudite:block/cloudite_block"
+    }
+  }
+}

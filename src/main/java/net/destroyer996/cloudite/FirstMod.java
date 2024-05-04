@@ -1,8 +1,9 @@
-package net.destroyer996.mod;
+package net.destroyer996.cloudite;
 
 import com.mojang.logging.LogUtils;
-import net.destroyer996.mod.item.ModCreativeModeTabs;
-import net.destroyer996.mod.item.ModItems;
+import net.destroyer996.cloudite.block.ModBlocks;
+import net.destroyer996.cloudite.item.ModCreativeModeTabs;
+import net.destroyer996.cloudite.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +30,8 @@ public class FirstMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
