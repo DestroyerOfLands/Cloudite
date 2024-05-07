@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.CLOUDITE_SCRAP.get());
                 output.accept(ModItems.ORE_FINDER.get());
                 output.accept(ModItems.ORE_FINDER_VALUABLE.get());
+                output.accept(ModBlocks.SOUND_BLOCK.get());
 
 
             })

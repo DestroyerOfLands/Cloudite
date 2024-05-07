@@ -2,6 +2,7 @@ package net.destroyer996.cloudite.block;
 
 import net.destroyer996.cloudite.FirstMod;
 import net.destroyer996.cloudite.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
@@ -23,8 +24,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CLOUDITE_BLOCK = registerBlock("cloudite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_LIGHT_GRAY).sound(SoundType.NETHERITE_BLOCK).explosionResistance(1200f)));
+
     public static final RegistryObject<Block> EMPYREAN_DEBRIS = registerBlock("raw_cloudite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.ANCIENT_DEBRIS).explosionResistance(1200f)));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

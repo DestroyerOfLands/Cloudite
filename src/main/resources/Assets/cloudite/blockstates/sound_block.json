@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cloudite:block/sound_block"
+    }
+  }
+}
