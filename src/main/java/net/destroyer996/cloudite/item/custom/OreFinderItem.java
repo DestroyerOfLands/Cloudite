@@ -12,41 +12,41 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class OreFinderItem extends Item {
-    public OreFinderItem(Properties properties){
+    public OreFinderItem(Properties properties) {
         super(properties);
 
     }
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        if(!context.getLevel().isClientSide()){
-            BlockPos postitionClicked = context.getClickedPos();
+        if (!context.getLevel().isClientSide()) {
+            BlockPos positionClicked = context.getClickedPos();
             Player player = context.getPlayer();
             boolean foundblock = false;
-            for(int i=0;i<=postitionClicked.getY()+64;i++){
-                BlockState state = context.getLevel().getBlockState(postitionClicked.below(i));
-                if(isOreBlock(state)){
-                    outputOreCoordinates(postitionClicked.below(i),player,state.getBlock());
+            for (int i = 0; i <= positionClicked.getY() + 64; i++) {
+                BlockState state = context.getLevel().getBlockState(positionClicked.below(i));
+                if (isOreBlock(state)) {
+                    outputOreCoordinates(positionClicked.below(i), player, state.getBlock());
                     foundblock = true;
 
                 }
             }
-            if(!foundblock){
+            if (!foundblock) {
                 player.sendSystemMessage(Component.literal("No Regular Ores Found"));
             }
 
         }
-        context.getItemInHand().hurtAndBreak(1,context.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
+        context.getItemInHand().hurtAndBreak(1, context.getPlayer(), player -> player.broadcastBreakEvent(player.getUsedItemHand()));
         return InteractionResult.SUCCESS;
 
     }
 
     private void outputOreCoordinates(BlockPos blockPos, Player player, Block block) {
-        player.sendSystemMessage(Component.literal(I18n.get(block.getDescriptionId()) + " at " + "(" + blockPos.getX() + ','+ blockPos.getY() + ','+ blockPos.getZ() + ')'));
+        player.sendSystemMessage(Component.literal(I18n.get(block.getDescriptionId()) + " at " + "(" + blockPos.getX() + ',' + blockPos.getY() + ',' + blockPos.getZ() + ')'));
 
     }
 
     private boolean isOreBlock(BlockState state) {
-        return state.is(Blocks.IRON_ORE) || state.is(Blocks.COPPER_ORE) || state.is(Blocks.NETHER_QUARTZ_ORE)  || state.is(Blocks.COAL_ORE) || state.is(Blocks.LAPIS_ORE) || state.is(Blocks.REDSTONE_ORE) || state.is(Blocks.DEEPSLATE_IRON_ORE) || state.is(Blocks.DEEPSLATE_COPPER_ORE)  || state.is(Blocks.DEEPSLATE_COAL_ORE) || state.is(Blocks.DEEPSLATE_LAPIS_ORE) || state.is(Blocks.DEEPSLATE_REDSTONE_ORE);
+        return state.is(Blocks.IRON_ORE) || state.is(Blocks.COPPER_ORE) || state.is(Blocks.NETHER_QUARTZ_ORE) || state.is(Blocks.COAL_ORE) || state.is(Blocks.LAPIS_ORE) || state.is(Blocks.REDSTONE_ORE) || state.is(Blocks.DEEPSLATE_IRON_ORE) || state.is(Blocks.DEEPSLATE_COPPER_ORE) || state.is(Blocks.DEEPSLATE_COAL_ORE) || state.is(Blocks.DEEPSLATE_LAPIS_ORE) || state.is(Blocks.DEEPSLATE_REDSTONE_ORE);
     }
 }

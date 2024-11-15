@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "*-*",
+    "*#*",
+    "***"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:diamond"
+    },
+    "#": {
+      "item": "cloudite:cloud"
+    },
+    "-": {
+      "item": "cloudite:cloudite_template"
+    }
+  },
+  "result": {
+    "item": "cloudite:cloudite_template"
+  }
+}

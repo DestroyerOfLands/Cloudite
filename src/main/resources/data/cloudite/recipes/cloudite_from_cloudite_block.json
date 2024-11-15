@@ -1,11 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "ingredients" : [{
-    "item" : "cloudite:cloudite_block"
-  }],
+  "ingredients": [
+    {
+      "item": "cloudite:cloudite_block"
+    }
+  ],
   "result": {
-    "item" : "cloudite:cloudite",
+    "item": "cloudite:cloudite",
     "count": 9
   }
 }

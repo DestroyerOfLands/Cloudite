@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "cloudite:item/ore_finder"
+    "layer0": "cloudite:item/cloudite_pickaxe"
   }
 }

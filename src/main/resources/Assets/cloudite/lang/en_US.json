@@ -4,8 +4,21 @@
   "creativetab.cloudite_items": "Cloudite",
   "block.cloudite.cloudite_block": "Block Of Cloudite",
   "block.cloudite.raw_cloudite_block": "Empyrean Debris",
-  "block.cloudite.sound_block": "Sound Block",
   "item.cloudite.cloudite_scrap": "Empyrean Scrap",
   "item.cloudite.ore_finder": "Ore Finder",
-  "item.cloudite.ore_finder_valuable": "Valuable Ore Finder"
+  "item.cloudite.ore_finder_valuable": "Valuable Ore Finder",
+  "item.cloudite.cloudite_pickaxe": "Cloudite Pickaxe",
+  "item.cloudite.cloudite_axe": "Cloudite Axe",
+  "item.cloudite.cloudite_hoe": "Cloudite Hoe",
+  "item.cloudite.cloudite_shovel": "Cloudite Shovel",
+  "item.cloudite.cloudite_sword": "Cloudite Sword",
+
+  "item.cloudite.cloudite_template": "Smithing Template",
+  "item.cloudite.cloudite_template.applies_to": "Applies to:",
+  "item.cloudite.cloudite_template.ingredients": "Ingredients:",
+  "item.cloudite.cloudite_template.cloudite_upgrade.additions_slot_description": "Add Cloudite Ingot",
+  "item.cloudite.cloudite_template.cloudite_upgrade.applies_to": "Diamond Equipment",
+  "item.cloudite.cloudite_template.cloudite_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
+  "item.cloudite.cloudite_template.cloudite_upgrade.ingredients": "Cloudite",
+  "item.cloudite.cloudite_template.upgrade": "Upgrade: "
 }

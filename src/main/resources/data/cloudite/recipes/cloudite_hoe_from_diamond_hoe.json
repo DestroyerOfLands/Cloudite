@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "cloudite:cloudite"
+  },
+  "base": {
+    "item": "minecraft:diamond_hoe"
+  },
+  "result": {
+    "item": "cloudite:cloudite_hoe"
+  },
+  "template": {
+    "item": "cloudite:cloudite_template"
+  }
+}
